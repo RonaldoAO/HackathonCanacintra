@@ -5,8 +5,9 @@ import { MdOutlineExplore } from "react-icons/md";
 import { TbPlant } from "react-icons/tb";
 import images from "../constants/images";
 
-export default function MisionCard({ imagen, titulo, descripcion }) {
+export default function MisionCard({ imagenG, imagenCH, titulo, descripcion, actividades}) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [screen, setScreen] = useState(1);
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -22,7 +23,7 @@ export default function MisionCard({ imagen, titulo, descripcion }) {
       {windowWidth < 768 ? (
         <div className=" card bg-base-100 image-full w-96 shadow-xl mt-5">
           <figure>
-            <img src={imagen} alt="Shoes" />
+            <img src={imagenCH} alt="Shoes" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">{titulo}</h2>
@@ -30,8 +31,11 @@ export default function MisionCard({ imagen, titulo, descripcion }) {
             <div className="card-actions justify-end">
               <button
                 className="btn btn-primary"
-                onClick={() =>
+                onClick={() =>{
                   document.getElementById("my_modal_2").showModal()
+                  setScreen("1")
+                }
+                  
                 }
               >
                 Explorar
@@ -43,7 +47,7 @@ export default function MisionCard({ imagen, titulo, descripcion }) {
         <div className="card card-side bg-base-100 shadow-xl mt-5">
           <figure>
             <img
-              src="https://media.admagazine.com/photos/618a5eb3a9f7fab6f0622baa/1:1/w_2000,h_2000,c_limit/96749.jpg"
+              src={imagenG}
               alt="Movie"
               className="w-[300px] sm:w-[200px]"
             />
@@ -62,7 +66,7 @@ export default function MisionCard({ imagen, titulo, descripcion }) {
                     />
                   </div>
                 </div>
-                <div className="timeline-end timeline-box">Pan de muerto</div>
+                <div className="timeline-end timeline-box">{actividades[0]}</div>
                 <hr />
               </li>
               <li>
@@ -76,7 +80,7 @@ export default function MisionCard({ imagen, titulo, descripcion }) {
                     />
                   </div>
                 </div>
-                <div className="timeline-end timeline-box">Altares</div>
+                <div className="timeline-end timeline-box">{actividades[1]}</div>
                 <hr />
               </li>
               <li>
@@ -87,7 +91,7 @@ export default function MisionCard({ imagen, titulo, descripcion }) {
                     <TbPlant className="text-white mx-auto my-auto" size={12} />
                   </div>
                 </div>
-                <div className="timeline-end timeline-box">Sempasuchil</div>
+                <div className="timeline-end timeline-box">{actividades[2]}</div>
                 <hr />
               </li>
               <li>
@@ -101,7 +105,7 @@ export default function MisionCard({ imagen, titulo, descripcion }) {
                     />
                   </div>
                 </div>
-                <div className="timeline-end timeline-box">Tumbas</div>
+                <div className="timeline-end timeline-box">{actividades[3]}</div>
                 <hr />
               </li>
               <li>
@@ -115,14 +119,18 @@ export default function MisionCard({ imagen, titulo, descripcion }) {
                     />
                   </div>
                 </div>
-                <div className="timeline-end timeline-box">Gastronomia</div>
+                <div className="timeline-end timeline-box">{actividades[4]}</div>
               </li>
             </ul>
             <div className="card-actions justify-end">
               <button
                 className="btn btn-primary"
                 onClick={() =>
-                  document.getElementById("my_modal_2").showModal()
+                  
+                  {
+                    document.getElementById("my_modal_2").showModal()
+                    setScreen(1)
+                  }
                 }
               >
                 Iniciar
@@ -133,7 +141,9 @@ export default function MisionCard({ imagen, titulo, descripcion }) {
       )}
 
   <dialog id="my_modal_2" className="modal">
+  {(screen == 1) &&
           <div className="modal-box w-11/12 max-w-5xl flex flex-row sm:flex-col">
+          
             <div>
               <img src={images.mascota021} className="w-48" />
             </div>
@@ -151,12 +161,38 @@ export default function MisionCard({ imagen, titulo, descripcion }) {
               <div className="modal-action">
                 <form method="dialog">
                   {/* if there is a button, it will close the modal */}
-                  <button className="btn">Entrar a esta aventura</button>
+                  <button className="btn" onClick={() => {setScreen(2)}}>Entrar a esta aventura</button>
                   <button className="btn btn-secondary ml-2">Salir</button>
                 </form>
               </div>
             </div>
           </div>
+}
+{(screen == 2) &&
+          <div className="modal-box w-11/12 max-w-5xl flex flex-row sm:flex-col">
+          
+            <div>
+              <img src={images.mascotaConPan} className="w-48" />
+            </div>
+            <div>
+              <h3 className="font-bold text-lg">El rico pan de muerto</h3>
+              <p className="py-4">
+                Este es uno de los pane mas rico que hay méxico, que se acostumbre comer en el mes de Octubre o Noviembre{" "}
+                <br />
+                ¿Pero porque en este mes exactamente y que es lo que representa?
+                <br />
+                Bueno <b>comencemos</b> con esta historia
+              </p>
+              <div className="modal-action">
+                <form method="dialog">
+                  {/* if there is a button, it will close the modal */}
+                  <button className="btn" onClick={() => {setScreen(2)}}>Next</button>
+                  
+                </form>
+              </div>
+            </div>
+          </div>
+}
         </dialog>
 
       

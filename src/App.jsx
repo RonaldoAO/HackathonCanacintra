@@ -14,6 +14,10 @@ import Favicon from "./components/Favicon";
 export default function App() {
   const [screen, setScreen] = useState("home");
 
+
+  const muertos = ["Pan de muerto","Panteon", "Sempasuchil", "Recorre", "Gastronomia"]
+  const traji = ["Experiencia", "Taller", "Guia", "Conoce", "Gastronomia"]
+
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -53,9 +57,11 @@ export default function App() {
                 Hola hemos visto que estas en CDMX te presento lo mas revelante
                 que puedes encontrar aquí
               </p>
-              <MisionCard  imagen={images.muertos} titulo="Dia de muertos" descripcion="Una de las festividades con mas tradicion de todo méxico"/>
-              <MisionCard  imagen={images.muertos} titulo="" descripcion=""/>
-              <MisionCard  imagen={images.muertos}/>
+              <MisionCard imagenG="https://media.admagazine.com/photos/618a5eb3a9f7fab6f0622baa/1:1/w_2000,h_2000,c_limit/96749.jpg" imagenCH={images.muertos} titulo="Dia de muertos" descripcion="Una de las festividades con mas tradicion de todo méxico"
+              actividades={muertos}/>
+              <MisionCard  imagenG="https://trajinerasvipxochimilco.com/wp-content/uploads/2023/08/imagen-principal.jpg" imagenCH={images.xochimilco} titulo="Las trajineras" descripcion=""
+              actividades={traji}/>
+              
             </div>
             </>
           )}
