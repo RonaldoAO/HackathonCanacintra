@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.leaflet-container {
+  height: 50vh;
+  width: 50%;
+  border-radius: 2rem;
+}
+@font-face {
+  font-family: 'Comic';
+  src: url('/src/assets/fonts/Comicy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
