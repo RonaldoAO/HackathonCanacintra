@@ -38,8 +38,8 @@
 ## About The Project
 
 <div style="display: flex; justify-content: space-around;">
-  <img src="src/assets/images/cap01.jpg" alt="Captura de pantalla" style="width: 45%;"/>
-  <img src="src/assets/images/cap02.jpg" alt="Captura de pantalla 2" style="width: 45%;"/>
+  <img src="src/assets/images/cap01.jpg" alt="Captura de pantalla" style="width: 30%; "/>
+  <img src="src/assets/images/cap02.jpg" alt="Captura de pantalla 2" style="width: 30%; margin-left:20px;"/>
 </div>
 
 México sufre de algunas deficiencias en el turismo, tal es el caso de la atención al cliente y otra serie de problemas que podemos ver
