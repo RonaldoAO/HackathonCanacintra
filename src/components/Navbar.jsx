@@ -1,8 +1,13 @@
 import React from "react";
 import ButtonNeon from "./ButtonNeon";
 import icons from "../constants/icons";
+import { Select } from "antd";
+
 
 export default function Navbar({ points, setScreen }) {
+  const handleChange = (value) => {
+    console.log(`selected ${value}`);
+  };
   return (
     <div className="navbar bg-base-100 z-50 fixed">
       <div className="navbar-start">
@@ -29,6 +34,7 @@ export default function Navbar({ points, setScreen }) {
             <p>Welcome,</p>
             <p>Ronaldo</p>
         </div>
+        
       </div>
       <div className="navbar-center">
         <a className="btn btn-ghost text-3xl font-comicfont">CoolTour</a>
