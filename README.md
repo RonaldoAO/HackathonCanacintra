@@ -39,7 +39,7 @@
 
 <div style="display: flex; justify-content: space-around;">
   <img src="src/assets/images/cap01.jpg" alt="Captura de pantalla" style="width: 30%; "/>
-  <img src="src/assets/images/cap02.jpg" alt="Captura de pantalla 2" style="width: 30%; margin-left:20px;"/>
+  <img src="src/assets/images/cap02.jpg" alt="Captura de pantalla 2" style="width: 30%; margin-left:50px;"/>
 </div>
 
 México sufre de algunas deficiencias en el turismo, tal es el caso de la atención al cliente y otra serie de problemas que podemos ver
@@ -53,21 +53,6 @@ CoolTour resuelve esto de una manera divertida y unica que te encantará probar
 
 
 <p align="right">(<a href="#readme-top">Volver</a>)</p>
-
-
-
-### Construido con 
-
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
