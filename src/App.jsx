@@ -10,6 +10,7 @@ import Map from "./Map";
 import DrawerIA from "./components/DrawerIA";
 import images from "./constants/images";
 import Favicon from "./components/Favicon";
+import Tienda from "./Tienda";
 
 export default function App() {
   const [screen, setScreen] = useState("home");
@@ -36,7 +37,7 @@ export default function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar setScreen={setScreen} />
       <div className="flex">
         <Sidebar setScreen={setScreen} />
 
@@ -74,6 +75,10 @@ export default function App() {
             
             <Map />
            
+          }
+          {
+            screen == "tienda" &&
+            <Tienda/>
           }
           <DrawerIA/>
           {windowWidth < 768 &&

@@ -41,7 +41,7 @@ export default function Navbar({ points, setScreen }) {
       </div>
 
       <div className="navbar-end">
-      <ButtonNeon icon={icons.dinero} text="1400" className="bg-black mr-2 text-sm"  />
+      <ButtonNeon icon={icons.dinero} text="1400" className="bg-black mr-2 text-sm"  onClick={() => {setScreen("tienda")}}/>
       <ButtonNeon icon={icons.tienda} className="sm:hidden bg-black mr-2"  />
         
         <ButtonNeon icon={icons.salida} className="bg-black sm:hidden"  />

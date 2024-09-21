@@ -19,7 +19,7 @@ export default function Advance({visible}) {
       </svg>
       <div className="w-full ">
         <h3 className="font-bold">Dia de muertos</h3>
-        <div className="text-xs">Hola Ronaldo te invitamos a que continues tu racha</div>
+        <div className="text-xs">Hola Ronaldo te invitamos a que continues tu ruta</div>
         <ProgressBar/>
       </div>
       <button className="btn btn-sm sm:hidden">Continuar</button>
