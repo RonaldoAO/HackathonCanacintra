@@ -7,6 +7,7 @@ import MisionCard from "./components/MisionCard";
 import Sidebar from "./components/Sidebar";
 import { useState } from "react";
 import Map from "./Map";
+import DrawerIA from "./components/DrawerIA";
 
 export default function App() {
   const [screen, setScreen] = useState("home");
@@ -17,7 +18,7 @@ export default function App() {
       <div className="flex">
         <Sidebar setScreen={setScreen} />
 
-        <div className=" w-[90%] h-screen pt-20  sm:w-[100%] align-middle">
+        <div className=" w-[90%] h-screen pt-20  sm:w-[100%] align-middle relative">
           <Advance />
 
           {screen == "home" && (
@@ -42,10 +43,8 @@ export default function App() {
               <MisionCard />
             </div>
           )}
-          {screen == "map" &&
-          <Map/>
-          
-}
+          {screen == "map" && <Map />}
+          <DrawerIA />
         </div>
       </div>
     </>

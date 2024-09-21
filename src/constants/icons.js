@@ -8,6 +8,7 @@ import marcador from "../assets/icons/marcador-de-mapa.png"
 import facebook from "../assets/icons/facebook.png"
 import instagram from "../assets/icons/instagram.png"
 import linkedin from "../assets/icons/linkedin.png"
+import avion from "../assets/icons/avion.png"
 export default{
     tienda,
     profile,
@@ -18,5 +19,6 @@ export default{
     marcador,
     facebook,
     instagram,
-    linkedin
+    linkedin,
+    avion
 }
