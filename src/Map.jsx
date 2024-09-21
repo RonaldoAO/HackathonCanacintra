@@ -8,7 +8,7 @@ import { Steps } from "antd";
 export default function Map() {
   return (
     <>
-      <div className="flex flex-row bg-[#3f00e7] w-[500px] p-2 ml-14 mb-5 rounded-md shadow-lg text-slate-200">
+      <div className="flex flex-row bg-[#3f00e7] p-2  mb-5 rounded-md shadow-lg text-slate-200 mx-2">
         <div className="p-2">
           <p className="text-xl font-bold">Avance: 1/5</p>
           <p className="text-sm">Reto: Prueba pan de muerto</p>
@@ -49,7 +49,7 @@ export default function Map() {
             imagen="https://lh5.googleusercontent.com/p/AF1QipNSQRqqGXDOy3vhZfOkLIIED1rsKKjDxj2555tm=w426-h240-k-no"
           />
           <Company
-            nombre="COMPAN Panaderia Artesanal"
+            nombre="COMPAN"
             direccion="Alfonso Pruneda, Copilco el Alto, Coyoacán, 04360 Ciudad de México, CDMX"
             imagen="https://lh5.googleusercontent.com/p/AF1QipNr0wuHwcXcQLApVsrQ1FLHnjy7Zd04YjPYGuCY=w408-h306-k-no"
           />
