@@ -5,7 +5,7 @@ import { MdOutlineExplore } from "react-icons/md";
 import { TbPlant } from "react-icons/tb";
 import images from "../constants/images";
 
-export default function MisionCard({ imagenG, imagenCH, titulo, descripcion, actividades}) {
+export default function MisionCard({ imagenG, imagenCH, titulo, descripcion, actividades, setInit}) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [screen, setScreen] = useState(1);
 
@@ -303,7 +303,9 @@ export default function MisionCard({ imagenG, imagenCH, titulo, descripcion, act
               <div className="modal-action">
                 <form method="dialog">
                   {/* if there is a button, it will close the modal */}
-                  <button className="btn" >Vamos</button>
+                  <button className="btn" onClick={() => {
+                    setInit(true)
+                  }}>Vamos</button>
                   
                 </form>
               </div>

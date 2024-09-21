@@ -10,7 +10,7 @@ const ProgressBar = () => (
         align: 'start',
         type: 'inner',
       }}
-      size={[300, 20]}
+      size={[, 20]}
       strokeColor="#B7EB8F"
     />
     

@@ -1,9 +1,9 @@
 import React from "react";
 import ProgressBar from "./ProgressBar";
 
-export default function Advance() {
+export default function Advance({visible}) {
   return (
-    <div role="alert" className="alert shadow-lg fixed z-10 w-[89%] sm:mx-5">
+    <div role="alert" className={`alert shadow-lg w-[89%] sm:mx-5 mb-5 ${visible? 'block': 'hidden'}`}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
