@@ -5,12 +5,25 @@ import icons from "./constants/icons";
 import Advance from "./components/Advance";
 import MisionCard from "./components/MisionCard";
 import Sidebar from "./components/Sidebar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Map from "./Map";
 import DrawerIA from "./components/DrawerIA";
+import images from "./constants/images";
+import Favicon from "./components/Favicon";
 
 export default function App() {
   const [screen, setScreen] = useState("home");
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResize);
+
+    // Limpia el evento cuando el componente se desmonta
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
@@ -19,9 +32,11 @@ export default function App() {
         <Sidebar setScreen={setScreen} />
 
         <div className=" w-[90%] h-screen pt-20  sm:w-[100%] align-middle relative">
-          <Advance />
+          
 
           {screen == "home" && (
+            <>
+            <Advance />
             <div className="w-full sm:w-screen mt-32 h-[80%]  p-4 overflow-y-scroll">
               <div className="flex flex-row sm:flex-col justify-between">
                 <h2 className="text-xl font-bold mb-4">Lo mas top</h2>
@@ -38,13 +53,20 @@ export default function App() {
                 Hola hemos visto que estas en CDMX te presento lo mas revelante
                 que puedes encontrar aquí
               </p>
-              <MisionCard />
-              <MisionCard />
-              <MisionCard />
+              <MisionCard  imagen={images.muertos} titulo="Dia de muertos" descripcion="Una de las festividades con mas tradicion de todo méxico"/>
+              <MisionCard  imagen={images.muertos} titulo="" descripcion=""/>
+              <MisionCard  imagen={images.muertos}/>
             </div>
+            </>
           )}
-          {screen == "map" && <Map />}
-          <DrawerIA />
+          {screen == "map" && 
+            
+            <Map />
+           
+          }
+          <DrawerIA/>
+          {windowWidth < 768 &&
+          <Favicon setScreen={setScreen} screen={screen}/>}
         </div>
       </div>
     </>

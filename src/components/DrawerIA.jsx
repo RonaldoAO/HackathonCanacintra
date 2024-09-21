@@ -32,7 +32,7 @@ const DrawerIA = () => {
       <Button
         type="primary"
         onClick={showDrawer}
-        className="fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg z-50 w-14 h-14"
+        className="fixed bottom-4 right-4 bg-black text-white p-3 rounded-full shadow-lg z-50 w-14 h-14"
       >
         Open
       </Button>
