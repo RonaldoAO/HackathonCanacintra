@@ -7,6 +7,12 @@
   width: 50%;
   border-radius: 2rem;
 }
+@media (max-width: 639px) {
+  .leaflet-container {
+    width: 90%;
+    height: 30vh;
+  }
+}
 @font-face {
   font-family: 'Comic';
   src: url('/src/assets/fonts/Comicy.otf') format('opentype');
