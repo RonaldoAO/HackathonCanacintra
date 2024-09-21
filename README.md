@@ -15,7 +15,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/LOGO2.jpg" alt="Logo" width="80" height="80">
+    <img src="src/assets/images/LOGO2.jpg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Plataforma de apoyo a negocios locales</h3>
@@ -38,8 +38,8 @@
 ## About The Project
 
 <div style="display: flex; justify-content: space-around;">
-  <img src="images/cap01" alt="Captura de pantalla" style="width: 45%;"/>
-  <img src="images/cap02" alt="Captura de pantalla 2" style="width: 45%;"/>
+  <img src="src/assets/images/cap01" alt="Captura de pantalla" style="width: 45%;"/>
+  <img src="src/assets/images/cap02" alt="Captura de pantalla 2" style="width: 45%;"/>
 </div>
 
 México sufre de algunas deficiencias en el turismo, tal es el caso de la atención al cliente y otra serie de problemas que podemos ver
