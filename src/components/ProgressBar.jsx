@@ -5,7 +5,7 @@ const ProgressBar = () => (
     
     
     <Progress
-      percent={50}
+      percent={0}
       percentPosition={{
         align: 'start',
         type: 'inner',

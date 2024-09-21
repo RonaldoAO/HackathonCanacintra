@@ -54,8 +54,39 @@ export default function App() {
                   <option disabled selected>
                     O Elige un Estado
                   </option>
-                  <option>México</option>
                   <option>Oaxaca</option>
+                    <option>Aguascalientes</option>
+                    <option>Baja California</option>
+                    <option>Baja California Sur</option>
+                    <option>Campeche</option>
+                    <option>Chiapas</option>
+                    <option>Chihuahua</option>
+                    <option>Ciudad de México</option>
+                    <option>Coahuila</option>
+                    <option>Colima</option>
+                    <option>Durango</option>
+                    <option>Guanajuato</option>
+                    <option>Guerrero</option>
+                    <option>Hidalgo</option>
+                    <option>Jalisco</option>
+                    <option>Estado de México</option>
+                    <option>Michoacán</option>
+                    <option>Morelos</option>
+                    <option>Nayarit</option>
+                    <option>Nuevo León</option>
+                    <option>Oaxaca</option>
+                    <option>Puebla</option>
+                    <option>Querétaro</option>
+                    <option>Quintana Roo</option>
+                    <option>San Luis Potosí</option>
+                    <option>Sinaloa</option>
+                    <option>Sonora</option>
+                    <option>Tabasco</option>
+                    <option>Tamaulipas</option>
+                    <option>Tlaxcala</option>
+                    <option>Veracruz</option>
+                    <option>Yucatán</option>
+                    <option>Zacatecas</option>
                 </select>
               </div>
 
@@ -63,8 +94,9 @@ export default function App() {
                 Hola hemos visto que estas en CDMX te presento lo mas revelante
                 que puedes encontrar aquí
               </p>
+              {!init &&
               <MisionCard imagenG="https://media.admagazine.com/photos/618a5eb3a9f7fab6f0622baa/1:1/w_2000,h_2000,c_limit/96749.jpg" imagenCH={images.muertos} titulo="Dia de muertos" descripcion="Una de las festividades con mas tradicion de todo méxico"
-              actividades={muertos} setInit={setInit}/>
+              actividades={muertos} setInit={setInit} /> }
               <MisionCard  imagenG="https://trajinerasvipxochimilco.com/wp-content/uploads/2023/08/imagen-principal.jpg" imagenCH={images.xochimilco} titulo="Las trajineras" descripcion=""
               actividades={traji}/>
               

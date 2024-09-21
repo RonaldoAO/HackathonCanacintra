@@ -7,6 +7,7 @@ export default function Company({nombre, descripcion, direccion, imagen}) {
         <img
           src={imagen}
           alt="Movie"
+
         />
       </figure>
       <div className="card-body ">
@@ -14,7 +15,8 @@ export default function Company({nombre, descripcion, direccion, imagen}) {
         <p className="text-xs">{direccion}</p>
         <p>{descripcion}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Visitar</button>
+          <button className="btn btn-primary sm:-mt-5">Visitar</button>
+          
         </div>
       </div>
     </div>
