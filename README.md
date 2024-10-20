@@ -14,11 +14,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="src/assets/images/LOGO2.jpg" alt="Logo" width="80" height="80">
-  </a>
+  
 
-  <h3 align="center">Plataforma de apoyo a negocios locales</h3>
+  <h3 align="center">Plataforma de generacion de rutas para turistas</h3>
 
   <p align="center">
     Empapate de cultura en México, conoce sus costumbres y tradiciones
@@ -37,10 +35,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<div style="display: flex; justify-content: space-around;">
-  <img src="src/assets/images/cap01.jpg" alt="Captura de pantalla" style="width: 30%; "/>
-  <img src="src/assets/images/cap02.jpg" alt="Captura de pantalla 2" style="width: 30%; margin-left:50px;"/>
-</div>
 
 México sufre de algunas deficiencias en el turismo, tal es el caso de la atención al cliente y otra serie de problemas que podemos ver
 
