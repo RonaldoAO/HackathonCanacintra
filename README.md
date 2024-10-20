@@ -21,7 +21,7 @@
   <p align="center">
     Empapate de cultura en México, conoce sus costumbres y tradiciones
     <br />
-    <a href="https://ronaldoao.github.io/HackathonCanacintra/"><strong>View Demo »</strong></a>
+    <a href="https://ronaldoao.github.io/HackathonLlama/"><strong>View Demo »</strong></a>
     <br />
     <br />
   </p>
