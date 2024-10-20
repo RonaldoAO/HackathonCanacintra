@@ -8,6 +8,8 @@ const { TextArea } = Input;
 
 const { Search } = Input;
 const DrawerIA = () => {
+  const[count, setCount] = useState(1);
+  const[response, setResponse] = useState('');
     const [value, setValue] = useState('');
   const [open, setOpen] = useState(false);
   const showDrawer = () => {
@@ -20,11 +22,21 @@ const DrawerIA = () => {
   const [input, setInput] = useState(""); // Estado para el input de texto
 
   const handleSendMessage = () => {
+
+    setResponse('Claro')
     if (input.trim()) {
       // Si el input no está vacío
-      setMessages([...messages, input]); // Agrega el mensaje a la lista
+      setMessages((prevMessages) => [...prevMessages, input]);
+       // Agrega el mensaje a la lista
+       setTimeout(() => {
+        if(count == 1) setMessages((prevMessages) => [...prevMessages, "Claro hemos tenido una buena aceptación de una cafeteria un poco inusual llamado Barbies Cafe situada en Donceles 88, Centro Histórico de la Ciudad de México."]);
+        if(count == 2) setMessages((prevMessages) => [...prevMessages, "Orgánico Bar de Café & Cocina es un bar de café que ofrece una variedad de cafés mexicanos de producción orgánica y agroecológica, además de cocina saludable. Esta situado en la calle Calle San Mateo, Av. Vicente Villada No. 183, 57760 Cdad. Nezahualcóyotl, Méx. "]);
+        
+      }, 2500); 
+      setCount(count + 1)
       setInput(""); // Limpia el campo de texto
     }
+    
   };
 
   return (
