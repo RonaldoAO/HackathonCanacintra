@@ -43,7 +43,7 @@ México sufre de algunas deficiencias en el turismo, tal es el caso de la atenci
 * La poca visibilidad a negocios pequeños
 * La apropiación de la cultura
 
-CoolTour resuelve esto de una manera divertida y unica que te encantará probar
+Turex resuelve esto de una manera divertida y unica que te encantará probar
 
 
 <p align="right">(<a href="#readme-top">Volver</a>)</p>
