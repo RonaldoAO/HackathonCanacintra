@@ -57,7 +57,7 @@ _Para poder instalarlo es necesario del uso  de node._
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/RonaldoAO/HackathonCanacintra.git
+   git clone https://github.com/RonaldoAO/HackathonLlama.git
    ```
 2. Install NPM packages
    ```sh
